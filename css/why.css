@@ -1,0 +1,104 @@
+:root {
+  --why-gap: 22px;
+  --why-n: 2;
+}
+
+.why {
+  background-color: var(--white);
+}
+
+.why-div {
+  display: flex;
+  gap: var(--why-gap);
+}
+
+.why-img-div {
+  min-width: calc((100% - (var(--why-gap) * (var(--why-n) - 1))) / var(--why-n));
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  background-image: url(../img/wheel.jpg);
+}
+
+.why-card {
+  width: calc((100% - (var(--why-gap) * (var(--why-n) - 1))) / var(--why-n));
+}
+
+.why-text {
+  margin: 0 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  color: #1c1c1e;
+}
+
+.why-text:nth-child(3) {
+  margin: 0 0 32px;
+}
+
+.why-btn {
+  width: 260px;
+  height: 70px;
+  font-size: 20px;
+}
+
+@media(max-width: 996px) {
+  .why-text {
+    margin: 0 0 14px;
+  }
+
+  .why-text:nth-child(3) {
+    margin: 0 0 28px;
+  }
+}
+
+@media(max-width: 960px) {
+  .why-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .why-img-div {
+    order: -1;
+    min-width: 100%;
+    min-height: 300px;
+  }
+
+  .why-card {
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+  .why-img-div {
+    min-height: 200px;
+  }
+
+  .why-btn {
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 576px) {
+  .why-btn {
+    width: 240px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 480px) {
+
+  .why-img-div {
+    min-height: 150px;
+  }
+
+  .why-btn {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+}

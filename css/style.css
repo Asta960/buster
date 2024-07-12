@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Bold'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Medium'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Semibold'),
+    url('../fonts/Montserrat-Semibold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Regular'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-ExtraBold'),
+    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montaga';
+  src: local('Montaga-Regular'),
+    url('../fonts/Montaga-Regular.woff2') format('woff2'),
+    url('../fonts/Montaga-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  background: #F6F6F9;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --white: #fff;
+  --red: #f00;
+  --red2: rgb(255, 153, 153);
+  --black: #000;
+  --bg-black: #000407;
+  --header-title: rgba(235, 235, 245, 0.6);
+  --whatsap-bg: #60d668;
+  --telegram-bg: linear-gradient(180deg, #2aabee 0%, #229ed9 100%);
+  --invis: rgba(0, 0, 0, 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+@media(max-width: 1170px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .map-contact {
+    left: 30px !important;
+    right: 30px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .map-contact {
+    left: 5% !important;
+    right: 5% !important;
+  }
+}
+
+.h2-title {
+  position: relative;
+  margin: 0 0 60px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--black);
+}
+
+.h2-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  border-radius: 90px;
+  border: 3px solid var(--red);
+}
+
+.main {
+  padding-top: 70px;
+}
+
+.map, .footer {
+  padding-top: 100px;
+}
+
+.section-services {
+  padding-bottom: 100px;
+}
+
+.section-form {
+  padding: 60px 0;
+}
+
+.why,
+.benefits,
+.section-news {
+  padding: 100px 0;
+}
+
+@media(max-width: 1170px) {
+  .section-services {
+    padding-bottom: 80px;
+  }
+
+  .section-form {
+    padding: 50px 0;
+  }
+
+  .why,
+  .benefits,
+  .section-news {
+    padding: 80px 0;
+  }
+
+  .map, .footer {
+    padding-top: 80px;
+  }
+}
+
+@media(max-width: 996px) {
+  .section-services {
+    padding-bottom: 70px;
+  }
+
+  .section-form {
+    padding: 45px 0;
+  }
+
+  .why,
+  .benefits,
+  .section-news {
+    padding: 70px 0;
+  }
+
+  .map, .footer {
+    padding-top: 70px;
+  }
+}
+
+@media(max-width: 768px) {
+  .section-services {
+    padding-bottom: 65px;
+  }
+
+  .section-form {
+    padding: 40px 0;
+  }
+
+  .why,
+  .benefits,
+  .section-news {
+    padding: 65px 0;
+  }
+
+  .map, .footer {
+    padding-top: 65px;
+  }
+}
+
+@media(max-width: 576px) {
+  .section-services {
+    padding-bottom: 60px;
+  }
+
+  .section-form {
+    padding: 35px 0;
+  }
+
+  .why,
+  .benefits,
+  .section-news {
+    padding: 60px 0;
+  }
+
+  .map, .footer {
+    padding-top: 60px;
+  }
+}
+
+@media(max-width: 480px) {
+  .section-services {
+    padding-bottom: 55px;
+  }
+
+  .section-form {
+    padding: 30px 0;
+  }
+
+  .why,
+  .benefits,
+  .section-news {
+    padding: 55px 0;
+  }
+
+  .map, .footer {
+    padding-top: 55px;
+  }
+}
+
+
+
+
+
+
+@media(max-width: 1170px) {
+  .h2-title {
+    font-size: 38px;
+  }
+}
+
+@media(max-width: 768px) {
+  .h2-title {
+    font-size: 34px;
+  }
+
+  .main {
+    padding-top: 60px;
+  }
+}
+
+@media(max-width: 576px) {
+  .main {
+    padding-top: 40px;
+  }
+
+  .h2-title {
+    margin-bottom: 18px;
+  }
+}
+
+@media(max-width: 451px) {
+  .h2-title {
+    font-size: 24px;
+  }
+
+  .main {
+    padding-top: 30px;
+  }
+}
+
+@media(max-width: 360px) {
+  .h2-title {
+    font-size: 22px;
+  }
+}

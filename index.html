@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бустер</title>
+  <script defer src="./index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/why.css">
+  <link rel="stylesheet" href="./css/benefits.css">
+  <link rel="stylesheet" href="./css/news.css">
+  <link rel="stylesheet" href="./css/map.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-contact">
+        <div class="time-work">
+          <p class="time-work-title header-contact-title">Мы работаем</p>
+          <p class="time-work-text header-contact-text">Круглосуточно</p>
+        </div>
+        <div class="work-adress">
+          <p class="work-adress-title header-contact-title">Мы находимся</p>
+          <p class="work-adress-text header-contact-text">Санкт-Петербург, ул. Амурская 5</p>
+        </div>
+        <div class="header-contact-link">
+          <a href="#" class="telegram-link">
+            <svg class="header-contact-link-telegram" width="17.38" height="14.4" viewBox="0 0 18 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.74213 6.83106C6.40713 4.79906 9.51713 3.45939 11.0721 2.81206C15.5171 0.963806 16.4396 0.642806 17.0421 0.631931C17.1746 0.629806 17.4696 0.662555 17.6621 0.81818C17.8221 0.94943 17.8671 1.12693 17.8896 1.25156C17.9096 1.37606 17.9371 1.65981 17.9146 1.88131C17.6746 4.41131 16.6321 10.5508 16.1021 13.3846C15.8796 14.5836 15.4371 14.9856 15.0096 15.0248C14.0796 15.1103 13.3746 14.4108 12.4746 13.8211C11.0671 12.8978 10.2721 12.3233 8.90463 11.4226C7.32463 10.3816 8.34963 9.80931 9.24963 8.87431C9.48463 8.62956 13.5796 4.90581 13.6571 4.56806C13.6671 4.52581 13.6771 4.36831 13.5821 4.28531C13.4896 4.20206 13.3521 4.23056 13.2521 4.25306C13.1096 4.28506 10.8621 5.77206 6.50213 8.71381C5.86463 9.15231 5.28713 9.36606 4.76713 9.3548C4.19713 9.34256 3.09713 9.03181 2.27963 8.76631C1.27963 8.44056 0.482133 8.26831 0.552133 7.71506C0.587133 7.42706 0.984633 7.13231 1.74213 6.83106Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="#" class="whatsap-link">
+            <svg class="header-contact-link-whatsap" width="19" height="18" viewBox="0 0 19 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_0_251)">
+                <path
+                  d="M0.575234 8.88949C0.574742 10.4563 0.987266 11.9858 1.77153 13.334L0.5 17.9405L5.25109 16.7044C6.56016 17.4126 8.03405 17.786 9.53382 17.7866H9.53769C14.477 17.7866 18.4979 13.7981 18.5 8.8966C18.5008 6.52116 17.5693 4.28742 15.8773 2.60707C14.1851 0.92693 11.9351 0.000976744 9.53769 0C4.59753 0 0.577203 3.98791 0.575234 8.88949ZM3.40468 13.1018L3.22728 12.8223C2.48155 11.6458 2.08794 10.2862 2.0885 8.89005C2.09005 4.81598 5.43158 1.5014 9.5405 1.5014C11.5303 1.50223 13.4004 2.27191 14.8069 3.66837C16.2134 5.06498 16.9873 6.92149 16.9868 8.89605C16.985 12.9701 13.6434 16.2851 9.53769 16.2851H9.53473C8.19788 16.2844 6.88677 15.9282 5.74334 15.255L5.47123 15.0949L2.65184 15.8284L3.40468 13.1018Z"
+                  fill="url(#paint1_linear_0_251)" />
+                <path
+                  d="M7.29738 5.17304C7.12962 4.80306 6.95306 4.79559 6.79352 4.78911C6.66288 4.78352 6.51354 4.78394 6.36434 4.78394C6.21499 4.78394 5.97234 4.83969 5.76724 5.0619C5.56193 5.28431 4.9834 5.8218 4.9834 6.91499C4.9834 8.00817 5.78588 9.06473 5.89774 9.21313C6.00975 9.36124 7.44694 11.6764 9.72309 12.5671C11.6148 13.3072 11.9997 13.16 12.4103 13.1229C12.8209 13.0859 13.7353 12.5855 13.9218 12.0667C14.1085 11.5479 14.1085 11.1032 14.0525 11.0103C13.9965 10.9177 13.8472 10.8621 13.6233 10.751C13.3993 10.6399 12.2983 10.1023 12.093 10.0282C11.8877 9.95406 11.7385 9.91708 11.5891 10.1396C11.4398 10.3617 11.0109 10.8621 10.8802 11.0103C10.7497 11.1588 10.6189 11.1773 10.3951 11.0662C10.171 10.9547 9.44979 10.7203 8.59416 9.96341C7.92844 9.37443 7.479 8.64711 7.34836 8.42462C7.21772 8.20248 7.33437 8.08206 7.44666 7.97134C7.54727 7.87178 7.67067 7.71187 7.78275 7.58218C7.89441 7.45241 7.93167 7.35983 8.00634 7.21164C8.08109 7.06331 8.04368 6.93355 7.98778 6.82241C7.93167 6.71127 7.49651 5.61236 7.29738 5.17304Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_0_251" x1="869.639" y1="1732.25" x2="869.639" y2="0.310547"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1FAF38" />
+                  <stop offset="1" stop-color="#60D669" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_0_251" x1="900.5" y1="1794.05" x2="900.5" y2="0"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F9F9F9" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+                <clipPath id="clip0_0_251">
+                  <rect width="18" height="18" fill="white" transform="translate(0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="header-telephone">
+          <div>
+            <p class="header-telephone-title header-contact-title">Круглосуточно</p>
+            <a class="header-telephone-text header-contact-text" href="tel:79994445566">+7 (999) 444-55-66</a>
+          </div>
+          <button id="modal-1" class="header-btn header-btn-contact" type="button">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="logo-and-nav">
+        <div class="logo-div">
+          <img class="logo" src="./img/logo.png" alt="Логотип">
+          <div class="logo-text">
+            <p class="logo-title">Бустер</p>
+            <p class="logo-descr">Техническая помощь на дорогах</p>
+          </div>
+        </div>
+        <nav id="header-nav">
+          <div id="services" class="services">
+            <span class="services">Услуги</span>
+            <div id="services-div">
+              <a class="services-link" href="#">Что то4</a>
+              <a class="services-link" href="#">Что то длинное</a>
+              <a class="services-link" href="#">Что то</a>
+              <a class="services-link" href="#">Что то44</a>
+              <a class="services-link" href="#">Что то 55</a>
+            </div>
+          </div>
+          <div id="company" class="company">
+            <span class="company">О компании</span>
+            <div id="company-div">
+              <a class="company-link" href="#">Что то длинное</a>
+              <a class="company-link" href="#">Что то 455</a>
+              <a class="company-link" href="#">Что то длинное</a>
+              <a class="company-link" href="#">Что то 6460</a>
+              <a class="company-link" href="#">Что то 46</a>
+            </div>
+          </div>
+          <a class="news" href="#">Новости</a>
+          <a class="contacts" href="#">Контакты</a>
+          <svg id="menu-svg" width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="2.5" x2="40" y2="2.5" stroke="white" stroke-width="4" />
+            <line y1="34.5" x2="40" y2="34.5" stroke="white" stroke-width="4" />
+            <line y1="18.5" x2="40" y2="18.5" stroke="white" stroke-width="4" />
+          </svg>
+
+        </nav>
+      </div>
+      <div class="h1-div">
+        <h1 class="h1">УСЛУГИ ТЕХПОМОЩИ</h1>
+        <p class="h1-descr">в Санкт-Петербурге и ЛО доступный 24/7</p>
+        <a class="h1-tel" href="tel:79994445566">+7 (999) 444-55-66</a>
+        <div class="h1-advantage-div">
+          <p class="advantage">Оставьте заявку онлайн - выездной шиномонтаж в течение часа! </p>
+          <p class="advantage">Оставьте заявку онлайн - выездной шиномонтаж в течение часа! </p>
+          <p class="advantage">Оставьте заявку онлайн - выездной шиномонтаж в течение часа! </p>
+        </div>
+        <button id="modal-2" class="header-btn h1-btn" type="button">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-services">
+      <div class="container">
+        <h2 class="h2-title">Наши услуги</h2>
+        <div class="services-list">
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Выездная техпомощь</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Выездная автоэлетрик</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Выездной шиномонтаж</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" viewBox="0 0 52 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Эвакуатор</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Компьютерная диагностика</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Ключи, замки</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Сварка</h3>
+          </a>
+          <a class="services-card" href="#">
+            <img src="./img/cubejpg.jpg" alt="" class="card-img">
+            <svg class="card-svg" width="52" height="2" viewBox="0 0 52 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L51 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <h3 class="card-title">Трезвый водитель</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="form-1 section-form">
+      <div class="container">
+        <h2 class="h2-title-form">Закажите мобильный шиномонтаж</h2>
+        <p class="h2-descr">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies pretium et mauris orci
+          eleifend feugiat. Amet ipsum adipiscing bibendum quis purus.</p>
+        <form class="section-form-form">
+          <input type="text" class="input-name" required placeholder="Ваше имя">
+          <input type="text" class="input-tel" required placeholder="Телефон">
+          <button class="header-btn form-btn" type="submit">Оставить заявку</button>
+        </form>
+        <p class="police">Оставляя заявку, Вы соглашаетесь с <a class="police-link" href="#">Политикой
+            конфиденциальности</a></p>
+      </div>
+    </section>
+    <section class="why">
+      <div class="container">
+        <h2 class="h2-title">Почему именно мы?</h2>
+        <div class="why-div">
+          <div class="why-card">
+            <p class="why-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies pretium et mauris
+              orci eleifend feugiat. Amet ipsum adipiscing bibendum quis purus. A suspendisse odio molestie eu vitae.
+              Aenean magna amet et ipsum dolor enim magnis eu. Ultricies pharetra nec mattis netus sit mauris vitae.
+            </p>
+            <p class="why-text">Elit feugiat dui pharetra dictumst. Urna pharetra ullamcorper volutpat purus. Rhoncus
+              sit in diam maecenas libero. Commodo vel magna suscipit auctor imperdiet eget placerat. Lectus ligula eget
+              vitae pretium at sociis rhoncus. Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p class="why-text">Elit feugiat dui pharetra dictumst. Urna pharetra ullamcorper volutpat purus. Rhoncus
+              sit in diam maecenas libero.
+            </p>
+            <button class="header-btn why-btn">Узнать подробнее</button>
+          </div>
+          <div class="why-img-div"></div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="h2-title">Наши преимущества</h2>
+        <div class="benefits-list">
+          <div class="benefits-card">
+            <div class="benefits-icon icon-1"></div>
+            <div>
+              <h3 class="benefits-card-title">Быстрое прибытие</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-2"></div>
+            <div>
+              <h3 class="benefits-card-title">Доступность 24/7</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-3"></div>
+            <div>
+              <h3 class="benefits-card-title">Удобные способы оплаты</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-4"></div>
+            <div>
+              <h3 class="benefits-card-title">Современное оборудование</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-5"></div>
+            <div>
+              <h3 class="benefits-card-title">Гарантия качества</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-6"></div>
+            <div>
+              <h3 class="benefits-card-title">Нет очередей</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-7"></div>
+            <div>
+              <h3 class="benefits-card-title">Широкий спектр услуг</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <div class="benefits-icon icon-8"></div>
+            <div>
+              <h3 class="benefits-card-title">Опытные мастера</h3>
+              <p class="benefits-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies
+                pretium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-2 section-form">
+      <div class="container">
+        <h2 class="h2-title-form">Наш круглосуточный шиномонтаж заботится о вашем комфорте на дороге!</h2>
+        <p class="h2-descr">Оставьте заявку, наш специалист свяжется с вами и предоставит бесплатную консультацию.</p>
+        <form class="section-form-form">
+          <input type="text" class="input-name" required placeholder="Ваше имя">
+          <input type="text" class="input-tel" required placeholder="Телефон">
+          <button class="header-btn form-btn" type="submit">Оставить заявку</button>
+        </form>
+        <p class="police">Оставляя заявку, Вы соглашаетесь с <a class="police-link" href="#">Политикой
+            конфиденциальности</a></p>
+      </div>
+    </section>
+    <section class="section-news">
+      <div class="container">
+        <h2 class="h2-title">Новости</h2>
+        <div class="news-list">
+          <a href="#" class="news-card">
+            <div class="news-card-img-div">
+              <img class="news-card-img" src="./img/news-1.jpg" alt="">
+            </div>
+            <h3 class="news-card-title">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p class="news-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies pretium et
+              mauris orci eleifend feugiat. Amet ipsum adipiscing bibendum quis purus.</p>
+          </a>
+          <a href="#" class="news-card">
+            <div class="news-card-img-div">
+              <img class="news-card-img" src="./img/news-2.jpg" alt="">
+            </div>
+            <h3 class="news-card-title">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p class="news-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies pretium et
+              mauris orci eleifend feugiat. Amet ipsum adipiscing bibendum quis purus.</p>
+          </a>
+          <a href="#" class="news-card">
+            <div class="news-card-img-div">
+              <img class="news-card-img" src="./img/news-3.jpg" alt="">
+            </div>
+            <h3 class="news-card-title">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p class="news-card-text">Lorem ipsum dolor sit amet consectetur. Odio porttitor odio ultricies pretium et
+              mauris orci eleifend feugiat. Amet ipsum adipiscing bibendum quis purus.</p>
+          </a>
+        </div>
+        <div class="center-btn">
+          <button class="header-btn news-btn">Читать подробнее</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="map">
+      <div class="container map-reletive">
+        <h2 class="h2-title map-h2">Контакты</h2>
+        <div class="map-contact">
+          <div class="map-work-adress">
+            <p class="map-work-adress-title map-header-contact-title">Мы находимся</p>
+            <p class="map-work-adress-text map-header-contact-text">Санкт-Петербург, ул. Амурская 5</p>
+          </div>
+          <div class="map-header-telephone">
+            <p class="map-header-telephone-title map-header-contact-title">Круглосуточно</p>
+            <a class="map-header-telephone-text map-header-contact-text" href="tel:79994445566">+7 (999) 444-55-66</a>
+          </div>
+          <div class="map-time-work">
+            <p class="map-time-work-title map-header-contact-title">Мы работаем</p>
+            <p class="map-time-work-text map-header-contact-text">Круглосуточно</p>
+          </div>
+          <div class="map-header-contact-link">
+            <a href="#" class="map-telegram-link">
+              <svg class="header-contact-link-telegram" width="17.38" height="14.4" viewBox="0 0 18 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.74213 6.83106C6.40713 4.79906 9.51713 3.45939 11.0721 2.81206C15.5171 0.963806 16.4396 0.642806 17.0421 0.631931C17.1746 0.629806 17.4696 0.662555 17.6621 0.81818C17.8221 0.94943 17.8671 1.12693 17.8896 1.25156C17.9096 1.37606 17.9371 1.65981 17.9146 1.88131C17.6746 4.41131 16.6321 10.5508 16.1021 13.3846C15.8796 14.5836 15.4371 14.9856 15.0096 15.0248C14.0796 15.1103 13.3746 14.4108 12.4746 13.8211C11.0671 12.8978 10.2721 12.3233 8.90463 11.4226C7.32463 10.3816 8.34963 9.80931 9.24963 8.87431C9.48463 8.62956 13.5796 4.90581 13.6571 4.56806C13.6671 4.52581 13.6771 4.36831 13.5821 4.28531C13.4896 4.20206 13.3521 4.23056 13.2521 4.25306C13.1096 4.28506 10.8621 5.77206 6.50213 8.71381C5.86463 9.15231 5.28713 9.36606 4.76713 9.3548C4.19713 9.34256 3.09713 9.03181 2.27963 8.76631C1.27963 8.44056 0.482133 8.26831 0.552133 7.71506C0.587133 7.42706 0.984633 7.13231 1.74213 6.83106Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href="#" class="map-whatsap-link">
+              <svg class="header-contact-link-whatsap" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_0_251)">
+                  <path
+                    d="M0.575234 8.88949C0.574742 10.4563 0.987266 11.9858 1.77153 13.334L0.5 17.9405L5.25109 16.7044C6.56016 17.4126 8.03405 17.786 9.53382 17.7866H9.53769C14.477 17.7866 18.4979 13.7981 18.5 8.8966C18.5008 6.52116 17.5693 4.28742 15.8773 2.60707C14.1851 0.92693 11.9351 0.000976744 9.53769 0C4.59753 0 0.577203 3.98791 0.575234 8.88949ZM3.40468 13.1018L3.22728 12.8223C2.48155 11.6458 2.08794 10.2862 2.0885 8.89005C2.09005 4.81598 5.43158 1.5014 9.5405 1.5014C11.5303 1.50223 13.4004 2.27191 14.8069 3.66837C16.2134 5.06498 16.9873 6.92149 16.9868 8.89605C16.985 12.9701 13.6434 16.2851 9.53769 16.2851H9.53473C8.19788 16.2844 6.88677 15.9282 5.74334 15.255L5.47123 15.0949L2.65184 15.8284L3.40468 13.1018Z"
+                    fill="url(#paint1_linear_0_251)" />
+                  <path
+                    d="M7.29738 5.17304C7.12962 4.80306 6.95306 4.79559 6.79352 4.78911C6.66288 4.78352 6.51354 4.78394 6.36434 4.78394C6.21499 4.78394 5.97234 4.83969 5.76724 5.0619C5.56193 5.28431 4.9834 5.8218 4.9834 6.91499C4.9834 8.00817 5.78588 9.06473 5.89774 9.21313C6.00975 9.36124 7.44694 11.6764 9.72309 12.5671C11.6148 13.3072 11.9997 13.16 12.4103 13.1229C12.8209 13.0859 13.7353 12.5855 13.9218 12.0667C14.1085 11.5479 14.1085 11.1032 14.0525 11.0103C13.9965 10.9177 13.8472 10.8621 13.6233 10.751C13.3993 10.6399 12.2983 10.1023 12.093 10.0282C11.8877 9.95406 11.7385 9.91708 11.5891 10.1396C11.4398 10.3617 11.0109 10.8621 10.8802 11.0103C10.7497 11.1588 10.6189 11.1773 10.3951 11.0662C10.171 10.9547 9.44979 10.7203 8.59416 9.96341C7.92844 9.37443 7.479 8.64711 7.34836 8.42462C7.21772 8.20248 7.33437 8.08206 7.44666 7.97134C7.54727 7.87178 7.67067 7.71187 7.78275 7.58218C7.89441 7.45241 7.93167 7.35983 8.00634 7.21164C8.08109 7.06331 8.04368 6.93355 7.98778 6.82241C7.93167 6.71127 7.49651 5.61236 7.29738 5.17304Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_0_251" x1="869.639" y1="1732.25" x2="869.639" y2="0.310547"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1FAF38" />
+                    <stop offset="1" stop-color="#60D669" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_0_251" x1="900.5" y1="1794.05" x2="900.5" y2="0"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F9F9F9" />
+                    <stop offset="1" stop-color="white" />
+                  </linearGradient>
+                  <clipPath id="clip0_0_251">
+                    <rect width="18" height="18" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <iframe class="iframe-map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A5262005407bd170b10ea7c36287acc9afdec967d3aac5b1096b21266ef53c948&amp;source=constructor"
+        width="100%" height="550" frameborder="0"></iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-div">
+        <div class="footer-column-1">
+          <div class="footer-logo-div">
+            <img class="footer-logo" src="./img/logo.png" alt="Логотип">
+            <div class="footer-logo-text">
+              <p class="footer-logo-title">Бустер</p>
+              <p class="footer-logo-descr">Техническая помощь на дорогах</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column-2">
+          <h2 class="footer-title">Для клиентов</h2>
+          <a class="footer-link" href="#">О компании</a>
+          <a class="footer-link" href="#">Контакты</a>
+          <a class="footer-link" href="#">Блог</a>
+          <a class="footer-link" href="#">Стоимость услуг</a>
+          <a class="footer-link" href="#">Калькулятор</a>
+        </div>
+        <div class="footer-column-3">
+          <h2 class="footer-title">Услуги</h2>
+          <a class="footer-link" href="#">Выездная техпомощь</a>
+          <a class="footer-link" href="#">Выездная автоэлетрик</a>
+          <a class="footer-link" href="#">Выездной шиномонтаж</a>
+          <a class="footer-link" href="#">Эвакуатор</a>
+          <a class="footer-link" href="#">Диагностика</a>
+          <a class="footer-link" href="#">Ключи, замки</a>
+          <a class="footer-link" href="#">Сварка</a>
+          <a class="footer-link" href="#">Трезвый водитель</a>
+        </div>
+        <div class="footer-column-4">
+          <div class="link-div">
+            <a class="footer-header-telephone-text footer-header-contact-text" href="tel:79994445566">+7 (999)
+              444-55-66</a>
+            <div class="footer-contact-link">
+              <a href="#" class="footer-telegram-link">
+                <svg class="header-contact-link-telegram" width="17.38" height="14.4" viewBox="0 0 18 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.74213 6.83106C6.40713 4.79906 9.51713 3.45939 11.0721 2.81206C15.5171 0.963806 16.4396 0.642806 17.0421 0.631931C17.1746 0.629806 17.4696 0.662555 17.6621 0.81818C17.8221 0.94943 17.8671 1.12693 17.8896 1.25156C17.9096 1.37606 17.9371 1.65981 17.9146 1.88131C17.6746 4.41131 16.6321 10.5508 16.1021 13.3846C15.8796 14.5836 15.4371 14.9856 15.0096 15.0248C14.0796 15.1103 13.3746 14.4108 12.4746 13.8211C11.0671 12.8978 10.2721 12.3233 8.90463 11.4226C7.32463 10.3816 8.34963 9.80931 9.24963 8.87431C9.48463 8.62956 13.5796 4.90581 13.6571 4.56806C13.6671 4.52581 13.6771 4.36831 13.5821 4.28531C13.4896 4.20206 13.3521 4.23056 13.2521 4.25306C13.1096 4.28506 10.8621 5.77206 6.50213 8.71381C5.86463 9.15231 5.28713 9.36606 4.76713 9.3548C4.19713 9.34256 3.09713 9.03181 2.27963 8.76631C1.27963 8.44056 0.482133 8.26831 0.552133 7.71506C0.587133 7.42706 0.984633 7.13231 1.74213 6.83106Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#" class="footer-whatsap-link">
+                <svg class="header-contact-link-whatsap" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_0_251)">
+                    <path
+                      d="M0.575234 8.88949C0.574742 10.4563 0.987266 11.9858 1.77153 13.334L0.5 17.9405L5.25109 16.7044C6.56016 17.4126 8.03405 17.786 9.53382 17.7866H9.53769C14.477 17.7866 18.4979 13.7981 18.5 8.8966C18.5008 6.52116 17.5693 4.28742 15.8773 2.60707C14.1851 0.92693 11.9351 0.000976744 9.53769 0C4.59753 0 0.577203 3.98791 0.575234 8.88949ZM3.40468 13.1018L3.22728 12.8223C2.48155 11.6458 2.08794 10.2862 2.0885 8.89005C2.09005 4.81598 5.43158 1.5014 9.5405 1.5014C11.5303 1.50223 13.4004 2.27191 14.8069 3.66837C16.2134 5.06498 16.9873 6.92149 16.9868 8.89605C16.985 12.9701 13.6434 16.2851 9.53769 16.2851H9.53473C8.19788 16.2844 6.88677 15.9282 5.74334 15.255L5.47123 15.0949L2.65184 15.8284L3.40468 13.1018Z"
+                      fill="url(#paint1_linear_0_251)" />
+                    <path
+                      d="M7.29738 5.17304C7.12962 4.80306 6.95306 4.79559 6.79352 4.78911C6.66288 4.78352 6.51354 4.78394 6.36434 4.78394C6.21499 4.78394 5.97234 4.83969 5.76724 5.0619C5.56193 5.28431 4.9834 5.8218 4.9834 6.91499C4.9834 8.00817 5.78588 9.06473 5.89774 9.21313C6.00975 9.36124 7.44694 11.6764 9.72309 12.5671C11.6148 13.3072 11.9997 13.16 12.4103 13.1229C12.8209 13.0859 13.7353 12.5855 13.9218 12.0667C14.1085 11.5479 14.1085 11.1032 14.0525 11.0103C13.9965 10.9177 13.8472 10.8621 13.6233 10.751C13.3993 10.6399 12.2983 10.1023 12.093 10.0282C11.8877 9.95406 11.7385 9.91708 11.5891 10.1396C11.4398 10.3617 11.0109 10.8621 10.8802 11.0103C10.7497 11.1588 10.6189 11.1773 10.3951 11.0662C10.171 10.9547 9.44979 10.7203 8.59416 9.96341C7.92844 9.37443 7.479 8.64711 7.34836 8.42462C7.21772 8.20248 7.33437 8.08206 7.44666 7.97134C7.54727 7.87178 7.67067 7.71187 7.78275 7.58218C7.89441 7.45241 7.93167 7.35983 8.00634 7.21164C8.08109 7.06331 8.04368 6.93355 7.98778 6.82241C7.93167 6.71127 7.49651 5.61236 7.29738 5.17304Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_0_251" x1="869.639" y1="1732.25" x2="869.639" y2="0.310547"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1FAF38" />
+                      <stop offset="1" stop-color="#60D669" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_0_251" x1="900.5" y1="1794.05" x2="900.5" y2="0"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F9F9F9" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                    <clipPath id="clip0_0_251">
+                      <rect width="18" height="18" fill="white" transform="translate(0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button id="modal-4" class="header-btn footer-btn" type="button">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="footer-down-center">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+        <p class="isart">Сайт разработан студией IS ART</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="bg-modal">
+    <div class="modal">
+      <h3 class="modal-title">Заказать звонок</h3>
+      <p class="modal-descr">Оставьте заявку и мы свяжемся с Вами в течение 10 минут</p>
+      <form id="modal-form">
+        <div class="icon-1">
+          <input type="text" class="modal-input" placeholder="Ваше имя">
+        </div>
+        <div class="icon-2">
+          <input type="text" class="modal-input" placeholder="Номер телефона">
+        </div>
+        <div class="icon-3">
+          <input type="text" class="modal-input" placeholder="Комментарий">
+        </div>
+        <button class="header-btn modal-btn" type="submit">Заказать звонок</button>
+      </form>
+      <a href="#" class="modal-descr-link">Оставляя заявку, Вы соглашаетесь с Политикой конфиденциальности</a>
+    </div>
+  </div>
+  <div id="hamburger-menu">
+    <div id="black"></div>
+    <div id="div-menu">
+      <svg id="close-menu" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L32 32M2 32L32 2" stroke="white" stroke-width="4" />
+      </svg>
+
+      <nav class="hamburger-menu-nav">
+        <div id="services-p" class="hamburger-menu-services">
+          <span class="span-div">Услуги</span>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+          <a class="services-a" href="#">Что то</a>
+        </div>
+        <div id="company-p" class="hamburger-menu-company">
+          <span class="span-div">О компании</span>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+          <a class="company-a" href="#">Что то</a>
+        </div>
+        <a class="hamburger-menu-news" href="#">Новости</a>
+        <a class="hamburger-menu-contacts" href="#">Контакты</a>
+      </nav>
+
+      <div id="div-1">
+        <div class="time-work">
+          <p class="time-work-title header-contact-title">Мы работаем</p>
+          <p class="time-work-text header-contact-text">Круглосуточно</p>
+        </div>
+        <div class="work-adress">
+          <p class="work-adress-title header-contact-title">Мы находимся</p>
+          <p class="work-adress-text header-contact-text">Санкт-Петербург, ул. Амурская 5</p>
+        </div>
+        <div class="header-telephone">
+          <div>
+            <p class="header-telephone-title header-contact-title">Круглосуточно</p>
+            <a class="header-telephone-text header-contact-text" href="tel:79994445566">+7 (999) 444-55-66</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

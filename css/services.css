@@ -1,0 +1,137 @@
+:root {
+  --serv-gap: 20px;
+  --serv-card-n: 4;
+}
+
+.section-services {
+
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--serv-gap);
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.services-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px 32px;
+  width: calc((100% - (var(--serv-gap) * (var(--serv-card-n) - 1))) / var(--serv-card-n));
+  background-color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-title {
+  justify-self: end;
+  margin: 0;
+  padding-top: 30px;
+  max-width: 100%;
+  /* height: 100%; */
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: bottom;
+  color: var(--black);
+}
+
+.card-svg {
+  position: absolute;
+  top: 180px;
+  width: 52px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.services-card:hover {
+  transform: scale(1.02);
+}
+
+.services-card:hover > .card-svg {
+  transform: scaleX(2);
+}
+
+.services-card:active {
+  background-color: inherit;
+}
+
+@media(max-width: 1230px) {
+  .services-card {
+    padding: 50px 20px 32px;
+  }
+}
+
+@media(max-width: 996px) {
+  :root {
+    --serv-card-n: 3;
+  }
+
+  .services-card {
+    padding: 50px 30px 32px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  :root {
+    --serv-card-n: 2;
+  }
+  .services-card {
+    padding: 30px 30px;
+  }
+
+  .card-svg {
+    top: 160px;
+  }
+
+}
+
+@media(max-width: 576px) {
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 480px) {
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 450px) {
+  .services-card {
+    padding: 30px 15px;
+  }
+}
+
+@media(max-width: 380px) {
+  .services-card {
+    padding: 30px 10px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .card-img {
+    margin-bottom: 20px;
+}
+.card-svg {
+  top: 150px;
+}
+}

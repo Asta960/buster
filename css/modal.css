@@ -1,0 +1,158 @@
+#bg-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#bg-modal.active {
+  display: flex;
+}
+
+.modal {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.modal-title {
+  margin: 0 0 16px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.modal-descr {
+  margin: 0 0 32px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.modal-descr-link {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 122%;
+  text-decoration: underline;
+  text-align: center;
+  color: #000;
+}
+
+.modal-input {
+  margin: 0 0 16px;
+  padding: 25px 0 25px 65px;
+  width: 320px;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 16px;
+}
+
+.modal-input:last-child {
+  margin: 0 0 32px;
+}
+
+.modal-input::placeholder {
+  padding: 25px 65px 25px 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+#modal-form div {
+  position: relative;
+}
+
+#modal-form div:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-1::after {
+  background-image: url("../img/modal-1.svg");
+}
+
+.icon-2::after {
+  background-image: url("../img/modal-2.svg");
+}
+
+.icon-3::after {
+  background-image: url("../img/modal-3.svg");
+}
+
+.modal-btn {
+  width: 320px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#modal-form {
+  margin: 0 0 16px;
+}
+
+@media(max-width: 480px) {
+  .modal {
+    padding: 15px;
+    max-width: 280px;
+  }
+
+  .modal-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+  }
+
+  .modal-descr {
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #000;
+  }
+
+  .modal-input {
+    margin: 0 0 10px;
+    padding: 25px 0 25px 65px;
+    width: 90%;
+    height: 55px;
+  }
+
+  .modal-input:last-child {
+    margin: 0 0 20px;
+  }
+
+  .modal-btn {
+    width: 90%;
+    height: 60px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .modal-descr-link {
+    font-size: 12px;
+  }
+
+  #modal-form div:after {
+    top: 10px;
+    left: 20px;
+  }
+
+  .modal-input::placeholder {
+    padding: 25px 35px 25px 0;
+    font-size: 14px;
+  }
+}
