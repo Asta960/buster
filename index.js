@@ -33,6 +33,7 @@ document.getElementById('modal-4').addEventListener('click', () => {
 })
 document.getElementById('bg-modal').addEventListener('click', event => {
   document.getElementById('bg-modal').classList.toggle('active');
+  event.stopPropagation()
 })
 document.getElementsByClassName('modal')[0].addEventListener('click', event => {
   event.stopPropagation()

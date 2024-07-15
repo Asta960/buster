@@ -226,10 +226,12 @@
 }
 
 #services.active #services-div {
+  display: flex;
   opacity: 1;
 }
 
 #company.active #company-div {
+  display: flex;
   opacity: 1;
 }
 
@@ -238,7 +240,7 @@
   top: 120%;
   left: -15px;
   right: -15px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 15px;
@@ -248,7 +250,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   z-index: 20;
-  transition: all 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 :is(#services-div, #company-div) a {
