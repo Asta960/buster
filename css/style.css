@@ -139,6 +139,8 @@ img {
   content: '';
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   height: 100%;
   border-radius: 90px;
   border: 3px solid var(--red);
@@ -148,7 +150,8 @@ img {
   padding-top: 70px;
 }
 
-.map, .footer {
+.map,
+.footer {
   padding-top: 100px;
 }
 
@@ -162,7 +165,13 @@ img {
 
 .why,
 .benefits,
-.section-news {
+.section-news,
+.service-buster,
+.black-card,
+.mobil-buster,
+.calculator,
+.mobile-service-text,
+.faq {
   padding: 100px 0;
 }
 
@@ -177,11 +186,18 @@ img {
 
   .why,
   .benefits,
-  .section-news {
+  .section-news,
+  .service-buster,
+  .black-card,
+  .mobil-buster,
+  .calculator,
+.mobile-service-text,
+.faq {
     padding: 80px 0;
   }
 
-  .map, .footer {
+  .map,
+  .footer {
     padding-top: 80px;
   }
 }
@@ -197,11 +213,18 @@ img {
 
   .why,
   .benefits,
-  .section-news {
+  .section-news,
+  .service-buster,
+  .black-card,
+  .mobil-buster,
+  .calculator,
+.mobile-service-text,
+.faq {
     padding: 70px 0;
   }
 
-  .map, .footer {
+  .map,
+  .footer {
     padding-top: 70px;
   }
 }
@@ -217,11 +240,18 @@ img {
 
   .why,
   .benefits,
-  .section-news {
+  .section-news,
+  .service-buster,
+  .black-card,
+  .mobil-buster,
+  .calculator,
+.mobile-service-text,
+.faq {
     padding: 65px 0;
   }
 
-  .map, .footer {
+  .map,
+  .footer {
     padding-top: 65px;
   }
 }
@@ -237,11 +267,18 @@ img {
 
   .why,
   .benefits,
-  .section-news {
+  .section-news,
+  .service-buster,
+  .black-card,
+  .mobil-buster,
+  .calculator,
+.mobile-service-text,
+.faq {
     padding: 60px 0;
   }
 
-  .map, .footer {
+  .map,
+  .footer {
     padding-top: 60px;
   }
 }
@@ -257,11 +294,18 @@ img {
 
   .why,
   .benefits,
-  .section-news {
+  .section-news,
+  .service-buster,
+  .black-card,
+  .mobil-buster,
+  .calculator,
+.mobile-service-text,
+.faq {
     padding: 55px 0;
   }
 
-  .map, .footer {
+  .map,
+  .footer {
     padding-top: 55px;
   }
 }
@@ -277,9 +321,9 @@ img {
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 792px) {
   .h2-title {
-    font-size: 34px;
+    font-size: 31px;
   }
 
   .main {

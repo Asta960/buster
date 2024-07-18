@@ -1,0 +1,129 @@
+.black-card {
+  position: relative;
+  background-color: var(--black);
+  background-image: url(../img/black-card.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.black-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
+.black-card-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.black-card-h2 {
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 144%;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+
+.black-card-descr {
+  margin: 0 0 56px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 145%;
+  text-align: center;
+  color: #fff;
+}
+
+.black-card-btn {
+  margin: 0;
+  padding: 20px 40px;
+  border: 2px solid var(--invis);
+  border-radius: 32px;
+  background-color: var(--red);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.black-card-btn:hover {
+  border-color: var(--white);
+}
+
+.black-card-btn:active {
+  color: var(--red);
+  background-color: var(--white);
+}
+
+@media(max-width: 996px) {
+  .black-card-h2 {
+    margin: 0 0 25px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .black-card-descr {
+    margin: 0 0 50px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .black-card-h2 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .black-card-descr {
+    margin: 0 0 40px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 576px) {
+  .black-card-h2 {
+    margin: 0 0 18px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .black-card-descr {
+    margin: 0 0 30px;
+    font-size: 16px;
+  }
+
+  .black-card-btn {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 450px) {
+  .black-card-h2 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .black-card-descr {
+    margin: 0 0 20px;
+    font-size: 14px;
+  }
+
+  .black-card-btn {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,80 @@
+.mobil-buster {
+  background-color: var(--white);
+}
+
+.mobil-buster-text {
+  position: relative;
+  margin: 0;
+  padding-left: 42px;
+  width: calc((100% - 20px) / 2);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.mobil-buster-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background: url(../img/h1-advantage.svg) no-repeat center;
+  background-size: cover;
+}
+
+.mobil-buster-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media(max-width: 1120px) {
+  .mobil-buster-text {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 996px) {
+  .mobil-buster-text {
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 768px) {
+  .mobil-buster-text {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 630px) {
+  .mobil-buster-text {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .mobil-buster-list {
+    gap: 15px;
+  }
+}
+
+@media(max-width: 576px) {
+  .mobil-buster-text {
+    width: 100%;
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 480px) {
+  .mobil-buster-text {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 380px) {
+  .mobil-buster-text {
+    width: 100%;
+    font-size: 14px;
+  }
+}
